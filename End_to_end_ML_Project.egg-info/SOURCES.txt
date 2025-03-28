@@ -1,0 +1,8 @@
+README.md
+setup.py
+End_to_end_ML_Project.egg-info/PKG-INFO
+End_to_end_ML_Project.egg-info/SOURCES.txt
+End_to_end_ML_Project.egg-info/dependency_links.txt
+End_to_end_ML_Project.egg-info/requires.txt
+End_to_end_ML_Project.egg-info/top_level.txt
+src/__init__.py
