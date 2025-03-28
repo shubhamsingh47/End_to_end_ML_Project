@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: End_to_end_ML_Project
+Version: 0.0.1
+Author: Shubham Singh
+Author-email: shubham47047@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
