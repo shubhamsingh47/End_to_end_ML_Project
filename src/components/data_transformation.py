@@ -82,16 +82,16 @@ class DataTransformation:
             input_feature_train_df = train_df.drop(target_column_name, axis=1)
             target_feature_train_df = train_df[target_column_name]
 
-            input_feature_test_df = train_df.drop(target_column_name, axis=1)
-            target_feature_test_df = train_df[target_column_name]
+            input_feature_test_df = test_df.drop(target_column_name, axis=1)
+            target_feature_test_df = test_df[target_column_name]
 
             logging.info("Applying preprocessing object on train and test data")
 
             input_feature_train_array = preprocessor_object.fit_transform(input_feature_train_df)
             input_feature_test_array = preprocessor_object.transform(input_feature_test_df)
 
-            train_array = np.c_[input_feature_train_array, np.array(input_feature_train_df)]
-            test_array = np.c_[input_feature_test_array, np.array(input_feature_test_df)]
+            train_array = np.c_[input_feature_train_array, np.array(target_feature_train_df)]
+            test_array = np.c_[input_feature_test_array, np.array(target_feature_test_df)]
 
             logging.info('Saving preprocessing object')
 
