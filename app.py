@@ -34,3 +34,7 @@ def predict_datapoint():
         results = prediction_pipeline.predict(prediction_df)
         print("Completed prediction")
         return render_template('home.html',results = results[0])
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0",debug=True)
